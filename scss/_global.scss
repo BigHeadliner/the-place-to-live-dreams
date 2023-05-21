@@ -1,0 +1,94 @@
+  
+ 
+//   html {  
+//     scroll-behavior: smooth;  
+//  }
+      
+
+     body {
+      min-height:100vh; 
+      color: $main-text-color; 
+      // font-family: 'Lexend', sans-serif; 
+      // font-weight: 400; 
+      @extend %lexend-400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+   } 
+
+ 
+    .container{ 
+        max-width: 1470px; 
+        margin: 0 auto; 
+        padding: 0 15px;  
+        border: 1px solid transparent; 
+        overflow: hidden;
+    }     
+        
+    .container-no-trimming { 
+      max-width: 1470px; 
+      margin: 0 auto; 
+      padding: 0 15px;  
+      border: 1px solid transparent;  
+      
+    } 
+     
+    
+
+    
+
+    .majority-suptitle{     
+      @extend %lexend-500; 
+      font-size: 14px; 
+      line-height: 18px; 
+      color: $main-suptitle-color;
+      text-transform: capitalize;  
+      position: relative; 
+      &::before{ 
+        content: ''; 
+        width: 32px; 
+        height: 1px; 
+        background-color: $main-suptitle-color; 
+        position: absolute;
+        left: -40px;
+        top: 9px;
+      }
+     
+    } 
+     
+    .majority-suptitle-alternative{     
+      @extend %lexend-500; 
+      font-size: 14px; 
+      line-height: 18px; 
+      color: $main-suptitle-color;
+      text-transform: capitalize;  
+      position: relative; 
+      &::before{ 
+        content: ''; 
+        width: 32px; 
+        height: 1px; 
+        background-color: $main-suptitle-color; 
+        position: absolute;
+        left: 30px;
+        top: -8px;
+      }
+     
+    } 
+     
+    .majority-title{   
+      @extend %lexend-600; 
+      font-size: 32px;
+      color: $main-title-color; 
+      line-height: 40px;  
+      text-transform: capitalize;
+    } 
+     
+    .majority-btn{ 
+      @extend %lexend-600; 
+      font-size: 14px; 
+      line-height: 22px;
+      color: #FFF;  
+      border-radius: 32px;
+    }
+ 
+
